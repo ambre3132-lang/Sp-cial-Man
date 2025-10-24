@@ -85,12 +85,9 @@ const Home: React.FC = () => {
 
                 {/* Hero Content */}
                 <div className="relative z-10 p-8 rounded-lg max-w-3xl mx-auto">
-                    <h1 className="text-5xl md:text-7xl font-bold text-amber-400 leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
+                    <h1 className="text-5xl md:text-7xl font-bold text-black md:text-amber-400 leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
                         {t('home_title')}
                     </h1>
-                    <p className="mt-4 text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.7)'}}>
-                        {t('home_subtitle')}
-                    </p>
                     <Link
                         to="/reservation"
                         className="mt-8 inline-block bg-amber-500 text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-amber-400 transition-transform transform hover:scale-105 duration-300"
