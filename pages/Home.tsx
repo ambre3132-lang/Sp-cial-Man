@@ -7,8 +7,7 @@ import { collection, addDoc, onSnapshot, query, orderBy, serverTimestamp, limit 
 import type { Review } from '../types';
 
 const backgroundImages = [
-    'https://i.postimg.cc/XNBW4VYz/Add-a-heading-Photo-Grid.png',
-    'https://i.postimg.cc/mkCKMgcr/aaa.png'
+    'https://i.postimg.cc/Y9N2M4ZQ/hc.png',
 ];
 
 const Home: React.FC = () => {
