@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     const { t } = useTranslations();
     const phoneNumber = "+212 666-678797";
     const address = "15 rue fal ouald oumeir talborjte agadir";
-    const message = encodeURIComponent("Bonjour, je souhaite prendre contact avec Special Man.");
+    const message = encodeURIComponent("Bonjour, je souhaite prendre contact avec Spécial Man.");
     const whatsappUrl = `https://wa.me/212666678797?text=${message}`;
 
     return (

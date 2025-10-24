@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
@@ -21,7 +22,7 @@ const InstagramIcon = () => (
 
 const FloatingSocials: React.FC = () => {
     const phoneNumber = "212666678797";
-    const message = encodeURIComponent("Bonjour, je souhaite prendre contact avec Special Man.");
+    const message = encodeURIComponent("Bonjour, je souhaite prendre contact avec Spécial Man.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
     return (

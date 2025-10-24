@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           {/* Brand & Description */}
           <div>
             <h3 className="text-2xl font-bold text-amber-400 mb-2" style={{fontFamily: "'Playfair Display', serif"}}>
-              <Link to="/" className="hover:text-amber-300 transition-colors">Special Man</Link>
+              <Link to="/" className="hover:text-amber-300 transition-colors">Spécial Man</Link>
             </h3>
              <p className="text-neutral-400 max-w-xs text-center md:text-left mx-auto md:mx-0">{t('footer_description')}</p>
           </div>
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
 
         </div>
         <div className="mt-12 pt-8 border-t border-amber-500/10 text-center text-neutral-400">
-          <p>&copy; {new Date().getFullYear()} Special Man. {t('footer_rights')}</p>
+          <p>&copy; {new Date().getFullYear()} Spécial Man. {t('footer_rights')}</p>
         </div>
       </div>
     </footer>

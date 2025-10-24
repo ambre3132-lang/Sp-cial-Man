@@ -10,7 +10,7 @@ export const translations: Translations = {
   nav_contact: { en: 'Contact', fr: 'Contact', ar: 'تواصل معنا' },
 
   // Home Page
-  home_title: { en: 'Welcome to Special Man', fr: 'Bienvenue chez Special Man', ar: 'مرحباً بك في Special Man' },
+  home_title: { en: 'Welcome to Spécial Man', fr: 'Bienvenue chez Spécial Man', ar: 'مرحباً بك في Spécial Man' },
   home_subtitle: { en: 'Experience ultimate grooming and relaxation.', fr: 'Vivez le summum du soin et de la relaxation.', ar: 'تجربة العناية الفائقة والاسترخاء.' },
   home_cta: { en: 'Book Now', fr: 'Réservez maintenant', ar: 'احجز الآن' },
 

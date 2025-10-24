@@ -57,7 +57,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
              <NavLink to="/" className="flex-shrink-0">
-              <img className="h-16 w-auto" src="https://i.postimg.cc/K8ny6QJb/Untitled-design.png" alt="Special Man Logo" />
+              <img className="h-16 w-auto" src="https://i.postimg.cc/y8SP19Xd/augdfv.png" alt="Spécial Man Logo" />
             </NavLink>
           </div>
           <div className="hidden md:flex items-center space-x-4">

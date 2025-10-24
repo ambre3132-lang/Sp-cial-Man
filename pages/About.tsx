@@ -27,7 +27,7 @@ const About: React.FC = () => {
                     <div className="rounded-lg overflow-hidden shadow-2xl border-2 border-amber-500/30">
                         <img 
                             src="https://i.postimg.cc/XNBW4VYz/Add-a-heading-Photo-Grid.png" 
-                            alt="Special Man Salon Interior" 
+                            alt="Spécial Man Salon Interior" 
                             className="w-full h-full object-cover"
                         />
                     </div>
