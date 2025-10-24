@@ -28,8 +28,6 @@ export const translations: Translations = {
   
   // Gallery Page
   gallery_title: { en: 'Our Gallery', fr: 'Notre Galerie', ar: 'معرض الصور' },
-  gallery_subtitle: { en: 'A Glimpse of Our Craftsmanship and Ambiance', fr: 'Un aperçu de notre savoir-faire et de notre ambiance', ar: 'لمحة عن حرفيتنا وأجواءنا' },
-  gallery_our_gallery_title: { en: 'Our Gallery', fr: 'Notre Galerie', ar: 'معرضنا' },
   gallery_before_after_title: { en: 'Before & After', fr: 'Avant & Après', ar: 'قبل وبعد' },
   gallery_before: { en: 'Before', fr: 'Avant', ar: 'قبل' },
   gallery_after: { en: 'After', fr: 'Après', ar: 'بعد' },

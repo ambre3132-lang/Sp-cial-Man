@@ -1,5 +1,5 @@
 import React from 'react';
-import { generalGalleryImages, beforeAfterImages } from '../constants/data';
+import { beforeAfterImages } from '../constants/data';
 import { useTranslations } from '../hooks/useTranslations';
 
 const Gallery: React.FC = () => {
@@ -11,25 +11,7 @@ const Gallery: React.FC = () => {
         {/* Main Title */}
         <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-amber-400">{t('gallery_title')}</h1>
-            <p className="mt-4 text-lg text-neutral-300">{t('gallery_subtitle')}</p>
         </div>
-
-        {/* Our Gallery Section */}
-        <section>
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-300 mb-8">{t('gallery_our_gallery_title')}</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {generalGalleryImages.map((src, index) => (
-                <div key={index} className="overflow-hidden rounded-lg shadow-lg group">
-                <img
-                    src={src}
-                    alt={`Salon view ${index + 1}`}
-                    loading="lazy"
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out"
-                />
-                </div>
-            ))}
-            </div>
-        </section>
 
         {/* Before & After Section */}
         <section>
