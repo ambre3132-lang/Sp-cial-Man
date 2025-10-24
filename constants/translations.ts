@@ -72,14 +72,14 @@ export const translations: Translations = {
   // About Page
   about_title: { en: 'Our Story', fr: 'Notre Histoire', ar: 'قصتنا' },
   about_intro_p1: { 
-    en: 'Founded with a passion for classic barbering and modern style, Special Man is more than just a salon—it\'s an experience. We believe that grooming is an essential part of a man\'s life, a ritual that builds confidence and character.',
-    fr: 'Fondé avec une passion pour la coiffure classique et le style moderne, Special Man est plus qu\'un simple salon, c\'est une expérience. Nous croyons que le soin est une partie essentielle de la vie d\'un homme, un rituel qui renforce la confiance et le caractère.',
-    ar: 'تأسس Special Man بشغف للحلاقة الكلاسيكية والأسلوب الحديث، وهو أكثر من مجرد صالون - إنها تجربة. نؤمن بأن العناية الشخصية جزء أساسي من حياة الرجل، وطقس يبني الثقة والشخصية.' 
+    en: 'Founded in 2003 by Fatna El Ouassi, a qualified multi-skilled nurse and former aesthetics professor at the Fandi Institute, the Ambre Center was born from a deep passion for beauty, health, and well-being.',
+    fr: 'Fondé en 2003 par Fatna El Ouassi, infirmière polyvalente diplômée et ancienne professeure d’esthétique à l’institut Fandi, le Centre Ambre est né d’une passion profonde pour la beauté, la santé et le bien-être.',
+    ar: 'تأسس مركز عنبر في عام 2003 على يد فاطنة الواسي، وهي ممرضة متعددة المهارات ومؤهلة وأستاذة سابقة في التجميل بمعهد فندي. وُلد المركز من شغف عميق بالجمال والصحة والرفاهية.' 
   },
   about_intro_p2: {
-    en: 'Our mission is to provide a sanctuary where gentlemen can relax, unwind, and receive world-class grooming services from our team of expert barbers. We are dedicated to the craft and committed to your satisfaction.',
-    fr: 'Notre mission est de fournir un sanctuaire où les messieurs peuvent se détendre, se relaxer et recevoir des services de soins de classe mondiale de notre équipe de barbiers experts. Nous sommes dévoués à notre métier et engagés envers votre satisfaction.',
-    ar: 'مهمتنا هي توفير ملاذ حيث يمكن للسادة الاسترخاء والراحة وتلقي خدمات عناية عالمية المستوى من فريقنا من الحلاقين الخبراء. نحن ملتزمون بحرفتنا وملتزمون برضاكم.'
+    en: 'Building on her dual medical and aesthetic background, Fatna wanted to create a space where the science of care meets the art of beauty. Specializing in facial treatments and nail care, she has made the Ambre Center a place of excellence, combining technique, relaxation, and refinement.',
+    fr: 'Forte de son double parcours médical et esthétique, Fatna a voulu créer un espace où la science du soin rencontre l’art de la beauté. Spécialisée dans les soins du visage et l’onglerie, elle a fait du Centre Ambre un lieu d’excellence, alliant technique, détente et raffinement.',
+    ar: 'بفضل خلفيتها المزدوجة في المجالين الطبي والتجميلي، أرادت فاطنة إنشاء مساحة يلتقي فيها علم العناية بفن الجمال. تخصصت في علاجات الوجه والعناية بالأظافر، وجعلت من مركز عنبر مكانًا للتميز يجمع بين التقنية والاسترخاء والرقي.'
   },
   about_why_us_title: { en: 'Why Choose Us?', fr: 'Pourquoi Nous Choisir ?', ar: 'لماذا تختارنا؟' },
   about_why_us_item1: { en: 'Experienced Professionals', fr: 'Professionnels Expérimentés', ar: 'محترفون ذوو خبرة' },

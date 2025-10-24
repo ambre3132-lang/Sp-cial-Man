@@ -42,7 +42,7 @@ export const serviceCategories: ServiceCategory[] = [
 ];
 
 export const generalGalleryImages: string[] = [
-  "https://i.postimg.cc/pr5WwhWH/jfg.png",
+  "#",
   
 ];
 
