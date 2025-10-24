@@ -72,13 +72,9 @@ const Header: React.FC = () => {
             <LanguageSwitcher />
           </div>
           <div className="md:hidden flex items-center">
-             <NavLink to="/reservation" className="text-neutral-300 hover:text-amber-400 transition-colors duration-300 p-2 rounded-full hover:bg-gray-700 mr-2" aria-label={t('nav_reservation')}>
-                <ReservationIcon />
-            </NavLink>
-             <LanguageSwitcher />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="ml-2 inline-flex items-center justify-center p-2 rounded-md text-neutral-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-neutral-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (
@@ -102,6 +98,13 @@ const Header: React.FC = () => {
                 {link.text}
               </NavLink>
             ))}
+            <NavLink to="/reservation" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => `block ${linkClass} ${isActive ? activeLinkClass : ''}`}>
+                {t('nav_reservation')}
+            </NavLink>
+            <hr className="border-gray-700 my-3" />
+            <div className="px-2 flex justify-center">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}
