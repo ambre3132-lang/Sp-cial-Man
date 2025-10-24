@@ -70,7 +70,7 @@ const Home: React.FC = () => {
         <div className="animate-fade-in">
             {/* Hero Section */}
             <div className="relative flex items-center justify-center text-center min-h-screen -mt-20 overflow-hidden">
-                {/* Background image */}
+                {/* Background image container */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
                     {backgroundImage && (
                         <div
@@ -81,11 +81,13 @@ const Home: React.FC = () => {
                             }}
                         />
                     )}
+                    {/* Mobile-only overlay */}
+                    <div className="absolute inset-0 bg-black/20 md:hidden" />
                 </div>
 
                 {/* Hero Content */}
                 <div className="relative z-10 p-8 rounded-lg max-w-3xl mx-auto">
-                    <h1 className="text-5xl md:text-7xl font-bold text-black md:text-amber-400 leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
+                    <h1 className="text-5xl md:text-7xl font-bold text-amber-400 leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
                         {t('home_title')}
                     </h1>
                     <Link
@@ -107,14 +109,20 @@ const Home: React.FC = () => {
                             <h2 className="text-4xl md:text-5xl font-bold text-center text-amber-400 mb-12">{t('home_services_title')}</h2>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 {serviceCategories.map(category => (
-                                    <div key={category.title} className="bg-gray-900/50 p-6 rounded-lg border border-amber-500/20 text-center flex flex-col">
-                                        <h3 className="text-2xl font-semibold text-amber-500 mb-4 flex-grow">{category.title}</h3>
-                                        <ul className="space-y-2 text-neutral-300">
-                                            {category.services.slice(0, 2).map(service => (
-                                                <li key={service.name}>{service.name} - <span className="font-semibold text-amber-400">{service.price} DH</span></li>
-                                            ))}
-                                            <li>...</li>
-                                        </ul>
+                                    <div key={category.title} className="bg-amber-100 p-6 rounded-lg border border-stone-800/20 text-center flex flex-col justify-between">
+                                        <div>
+                                            <h3 className="text-2xl font-semibold text-stone-900 mb-4">{category.title}</h3>
+                                            <ul className="space-y-2 text-stone-800 mb-6">
+                                                {category.services.slice(0, 2).map(service => (
+                                                    <li key={service.name}>{service.name} - <span className="font-semibold text-stone-900">{service.price} DH</span></li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        <div className="mt-auto">
+                                            <Link to="/services" className="inline-block bg-stone-800 text-amber-100 font-bold py-2 px-6 rounded-full text-sm hover:bg-stone-700 transition-transform transform hover:scale-105 duration-300">
+                                                {t('home_services_view_more')}
+                                            </Link>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

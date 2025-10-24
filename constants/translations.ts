@@ -17,6 +17,7 @@ export const translations: Translations = {
   // Home Page Sections
   home_services_title: { en: 'Our Services', fr: 'Nos Services', ar: 'خدماتنا' },
   home_services_view_all: { en: 'View All Services', fr: 'Voir tous les services', ar: 'عرض كل الخدمات' },
+  home_services_view_more: { en: 'See more...', fr: 'Voir plus...', ar: 'شاهد المزيد...' },
   home_location_title: { en: 'Our Location on the Map', fr: 'Notre Emplacement sur la Carte', ar: 'موقعنا على الخريطة' },
   home_location_cta: { en: 'View on Google Maps', fr: 'Voir sur Google Maps', ar: 'عرض على خرائط جوجل' },
   home_reviews_title: { en: 'What Our Clients Say', fr: 'Avis de nos clients', ar: 'آراء عملائنا' },

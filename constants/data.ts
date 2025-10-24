@@ -4,8 +4,8 @@ export const serviceCategories: ServiceCategory[] = [
   {
     title: "Onglerie",
     services: [
-      { name: "Forme ongle mains", price: 20 },
-      { name: "Forme ongle pieds", price: 40 },
+      { name: "pédicure médical", price: 200 },
+      { name: "pédicure simple", price: 150 },
       { name: "Manicure", price: 50 },
       { name: "Manicure SPA", price: 80 },
       { name: "Pedicure", price: 150 },
