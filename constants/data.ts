@@ -42,25 +42,25 @@ export const serviceCategories: ServiceCategory[] = [
 ];
 
 export const generalGalleryImages: string[] = [
-  "https://picsum.photos/seed/salon1/800/600.webp",
-  "https://picsum.photos/seed/salon2/600/800.webp",
-  "https://picsum.photos/seed/salon3/800/600.webp",
-  "https://picsum.photos/seed/salon4/800/600.webp",
-  "https://picsum.photos/seed/salon5/600/800.webp",
-  "https://picsum.photos/seed/salon6/800/600.webp",
+  "https://i.postimg.cc/pr5WwhWH/jfg.png",
+  
 ];
 
 export const beforeAfterImages: BeforeAfterImage[] = [
     {
-        before: "https://picsum.photos/seed/before1/600/600.webp",
-        after: "https://picsum.photos/seed/after1/600/600.webp",
+        before: "https://i.postimg.cc/hvvg9JzD/1.png",
+        after: "https://i.postimg.cc/rFdMsr2P/2.png",
     },
     {
-        before: "https://picsum.photos/seed/before2/600/600.webp",
-        after: "https://picsum.photos/seed/after2/600/600.webp",
+        before: "https://i.postimg.cc/KjkwGt3z/3.png",
+        after: "https://i.postimg.cc/pLJWMtt0/4.png",
     },
     {
-        before: "https://picsum.photos/seed/before3/600/600.webp",
-        after: "https://picsum.photos/seed/after3/600/600.webp",
+        before: "https://i.postimg.cc/kgf0yMCS/5.png",
+        after: "https://i.postimg.cc/tJ3fnpkc/6.png",
+    },
+    {
+        before: "https://i.postimg.cc/0NKVJ9yR/7.png",
+        after: "https://i.postimg.cc/hvssqjpT/8.png",
     },
 ];
