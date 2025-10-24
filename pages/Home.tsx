@@ -6,9 +6,8 @@ import { db } from '../lib/firebase';
 import { collection, addDoc, onSnapshot, query, orderBy, serverTimestamp, limit } from 'firebase/firestore';
 import type { Review } from '../types';
 
-const backgroundImages = [
-    'https://i.postimg.cc/Y9N2M4ZQ/hc.png',
-];
+const desktopImage = 'https://i.postimg.cc/QMzShbvT/srh.png';
+const mobileImage = 'https://i.postimg.cc/9XL0MnLV/bay.png';
 
 const Home: React.FC = () => {
     const { t } = useTranslations();
@@ -16,7 +15,7 @@ const Home: React.FC = () => {
     const [newName, setNewName] = useState('');
     const [newComment, setNewComment] = useState('');
     const [loading, setLoading] = useState(true);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [backgroundImage, setBackgroundImage] = useState('');
 
     // Effect for reviews
     useEffect(() => {
@@ -36,13 +35,17 @@ const Home: React.FC = () => {
         return () => unsubscribe();
     }, []);
 
-    // Effect for background slideshow
+    // Effect for background image based on screen size
     useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
-        }, 5000); // Change image every 5 seconds
+        const handleResize = () => {
+            const newImage = window.innerWidth >= 768 ? desktopImage : mobileImage;
+            setBackgroundImage(newImage);
+        };
 
-        return () => clearInterval(intervalId);
+        handleResize(); // Set image on initial load
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     const handleReviewSubmit = async (e: React.FormEvent) => {
@@ -67,20 +70,17 @@ const Home: React.FC = () => {
         <div className="animate-fade-in">
             {/* Hero Section */}
             <div className="relative flex items-center justify-center text-center min-h-screen -mt-20 overflow-hidden">
-                {/* Background slideshow */}
+                {/* Background image */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
-                    {backgroundImages.map((image, index) => (
+                    {backgroundImage && (
                         <div
-                            key={image}
                             className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
                             style={{
-                                backgroundImage: `url('${image}')`,
-                                opacity: index === currentImageIndex ? 1 : 0,
+                                backgroundImage: `url('${backgroundImage}')`,
+                                opacity: 1,
                             }}
                         />
-                    ))}
-                    {/* Overlay to darken the background for better text readability */}
-                    <div className="absolute inset-0 bg-black/60"></div>
+                    )}
                 </div>
 
                 {/* Hero Content */}
