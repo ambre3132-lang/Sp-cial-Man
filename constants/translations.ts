@@ -59,9 +59,9 @@ export const translations: Translations = {
 
   // Footer
   footer_description: {
-    en: 'Your destination for premium grooming and classic barbering.',
-    fr: 'Votre destination pour un soin premium et une coiffure classique.',
-    ar: 'وجهتك للعناية الممتازة والحلاقة الكلاسيكية.'
+    en: 'Your destination for premium care and medical pedicures',
+    fr: 'Votre destination pour un soin premium et une pédicure médical',
+    ar: 'وجهتك للرعاية المتميزة والباديكير الطبي'
   },
   footer_contact_us: { en: 'Contact Us', fr: 'Contactez-nous', ar: 'تواصل معنا' },
   footer_follow_us: { en: 'Follow Us', fr: 'Suivez-nous', ar: 'تابعنا' },
