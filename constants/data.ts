@@ -63,4 +63,8 @@ export const beforeAfterImages: BeforeAfterImage[] = [
         before: "https://i.postimg.cc/0NKVJ9yR/7.png",
         after: "https://i.postimg.cc/hvssqjpT/8.png",
     },
+  {
+        before: "https://i.postimg.cc/0NKVJ9yR/7.png",
+        after: "https://i.postimg.cc/hvssqjpT/8.png",
+    },
 ];
